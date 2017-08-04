@@ -1,6 +1,8 @@
 language: java
 
+# Prevent Travis from executing its default maven command, see https://github.com/travis-ci/travis-ci/issues/1400
+# "mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V"
 install: true
 
 script:
-- mvn clean compile
+- mvn --batch-mode clean install
