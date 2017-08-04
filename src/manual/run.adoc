@@ -95,7 +95,7 @@ public class DataProviderIT extends AbstractTestNGCitrusTest {
   @CitrusXmlTest
   @CitrusParameters("message")
   @Test(dataProvider = "messageDataProvider")
-  public void DataProviderIT(ITestContext testContext) {
+  public void DataProviderIT(String message) {
   }
 
   @DataProvider
